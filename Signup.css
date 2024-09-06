@@ -1,0 +1,84 @@
+/* Full height and centered container with background image */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Style the signup form */
+.signup-form {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Style the signup form heading */
+.signup-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style the signup form input fields */
+.signup-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style the signup form buttons */
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signup-form button:hover {
+  background: #0056b3;
+}
+
+/* Style the error message */
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.message.success {
+  color: green;
+  font-size: 16px;
+}
+
+.message.error {
+  color: red;
+}
+
+/* Style the back button */
+.back-button {
+  background: #28a745; /* Green background */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.back-button:hover {
+  background: #218838; 
+}

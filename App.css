@@ -1,0 +1,315 @@
+/* App.css */
+
+/* Global settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  background-color: #f4f4f8;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.conversation-heading {
+  background-color: transparent;
+  padding: 20px;
+  color: #0056b3;
+  text-align: left;
+  padding-left: 17rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.side-panel, .main-panel {
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('C:\Users\DELL\Downloads\background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-container {
+  width: 300px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.umt-logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: calc(100% - 40px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-container button {
+  width: calc(50% - 10px);
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-buttons button {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.message {
+  font-size: 12px;
+  color: red;
+}
+
+.signup-prompt {
+  font-size: 14px;
+}
+
+.login-buttons button {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.signup-prompt button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.user, .bot {
+  background-color: #f0f0f0;
+  padding: 10px 15px;
+  margin: 8px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user {
+  align-self: flex-end;
+}
+
+.bot {
+  align-self: flex-start;
+}
+
+.new-chat-button {
+  width: 100%;
+  padding: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.2s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+  margin-top: auto;
+}
+
+.new-chat-button:hover {
+  background-color: #0056b3;
+}
+
+.side-panel {
+  width: 250px;
+  height: 100%;
+  background-color: #f9f9f9dc;
+  border-right: 2px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  flex-shrink: 0; /* Prevent the side panel from shrinking */
+  overflow-y: hidden; /* Enable vertical scrolling */
+  
+}
+
+.side-panel img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.side-panel h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.side-panel-content {
+  flex: 1;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.side-panel ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-panel ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.side-panel ul li:hover {
+  background-color: #f0f0f0;
+}
+
+.main-panel {
+  height: calc(90% - 50px);
+  flex-grow: 1;
+  padding: 20px;
+  padding-bottom: 70px;
+  overflow-y: auto;
+  background-color: #ffffff30;
+}
+
+.upload-message {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  background-color: white;
+  color: black;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeOut 2s forwards;
+  font-size: 14px;
+}
+
+.input-container {
+  position: fixed;
+  bottom: 0;
+  left: 250px; /* Offset by the width of the side panel */
+  width: calc(100% - 250px); /* Fill remaining space */
+  background-color: #ffffff9b;
+  padding: 5px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.input-container input[type="text"] {
+  flex-grow: 1; /* Grow to fill available space */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px; /* Add margin between input and buttons */
+}
+
+.input-container button, .input-container .custom-file-upload, .input-container .choose-file-button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue for action buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-shrink: 0; /* Prevent the button from shrinking */
+  display: flex;
+  align-items: center; /* Center align text and icon */
+  justify-content: center; /* Center align text and icon */
+  margin-left: 10px; /* Add margin between buttons */
+}
+
+.input-container button:hover, .input-container .custom-file-upload:hover, .input-container .choose-file-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.input-container label {
+  font-size: 10px; /* Adjust font size */
+  margin-right: 10px; /* Add margin between label and input */
+}
+
+.input-container input[type="file"] {
+  display: none; /* Hide the file input */
+}
+
+.logout-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .side-panel, .main-panel {
+    width: 100%;
+    border-right: none;
+  }
+
+  .input-container {
+    left: 0;
+    width: 100%;
+  }
+
+  .side-panel-content, .main-panel, .input-container {
+    height: auto; /* Adjust the height as needed for smaller screens */
+  }
+}
+
+.quiz-question {
+  margin-bottom: 1rem;
+}
+
+.quiz-options {
+  margin-left: 1.5rem;
+  font-size: 0.9rem; /* Adjust the font size as needed */
+}
+
